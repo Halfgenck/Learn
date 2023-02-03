@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 文本输入 -->
+<from>
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+</from>
+<!-- 单选按钮输入 -->
+<!-- 单选按钮允许用户在有限数量的选项中选择其中之一 -->
+<form>
+    <input type="radio" name="sex" value="male" checked>Male
+    <br>
+    <input type="radio" name="sex" value="Female">Female
+</form>
+<!-- 提交按钮 -->
+<!-- 表单处理程序通常是包含用来处理输入数据的脚本的服务器页面. -->
+<form action="https://www.w3school.com.cn/demo/demo_form.asp" method="get">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+<!--Action 属性-->
+<!--action 属性定义在提交表单时执行的动作。-->
+<!--向服务器提交表单的通常做法是使用提交按钮。-->
+<!--通常，表单会被提交到 web 服务器上的网页。-->
+
+<!--用 <fieldset> 组合表单数据-->
+<!-- <fieldset> 元素组合表单中的相关数据-->
+
+<!-- <legend> 元素为 <fieldset> 元素定义标题。-->
+<form action="https://www.w3school.com.cn/demo/demo_form.asp">
+    <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit"></fieldset>
+</form>
+<!--HTML Form 属性-->
+<!--HTML <form> 元素，已设置所有可能的属性，是这样的：-->
+<form action="HTML5符号实体.html" method="get" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+    .
+        form elements
+    .
+</form>
+</body>
+</html>

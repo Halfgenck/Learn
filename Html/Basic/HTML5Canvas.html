@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            font-size: 70%;
+            font-family: verdana, helvetica, arial, sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+        function cnvs_getCoordinates(e) {
+            x = e.clientX;
+            y = e.clientY;
+            document.getElementById("xycoordinates").innerHTML = "Coordinates:(" + x + "," + y + ")";
+        }
+
+        function cnvs_clearCoordinates() {
+            document.getElementById("xycoordinates").innerHTML = "";
+        }
+    </script>
+</head>
+<body>
+
+<p>把鼠标悬停在下面的矩形上可以看到坐标：</p>
+<div id="coordiv" style="float: left;width: 199px;height: 99px;border: 1px solid #c3c3c3"
+     onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()">
+
+</div>
+<div id="xycoordinates"></div>
+
+<!--圆形-->
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3;">
+    Your browser does not support the canvas element
+</canvas>
+<script type="text/javascript">
+    var c = document.getElementById("myCanvas");
+    var cxt = c.getContext("2d");
+    cxt.fillStyle="#ff0000"
+    cxt.beginPath();
+    cxt.arc(70,18,15,0,Math.PI*2,true);
+    cxt.closePath();
+    cxt.fill();
+</script>
+
+<!--渐变-->
+<canvas id="change" width="200" height="100" style="border: 1px solid #c3c3c3;">
+    Your browser does not support the canvas element
+</canvas>
+<script type="text/javascript">
+    var c = document.getElementById("change");
+    var cxt = c.getContext("2d");
+    var grd = cxt.createLinearGradient(0,0,175,50);
+    grd.addColorStop(0,"#ff0000");
+    grd.addColorStop(1,"#00ff00");
+    cxt.fillStyle=grd;
+    cxt.fillRect(0,0,175,50)
+</script>
+<!--图片-->
+<img src="/Html/image/415519.jpg" width="224" height="162" alt="图片" id="scream">
+<p >canvas</p>
+<canvas id="picture" width="2440" height="1820" style="border: 1px solid #c3c3c3">
+    your browser does not support the html5 canvas tag.
+</canvas>
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById("picture");
+        var cxt = canvas.getContext("2d");
+        var img = document.getElementById("scream");
+        cxt.drawImage(img,10,10);
+    };
+</script>
+</body>
+</html>

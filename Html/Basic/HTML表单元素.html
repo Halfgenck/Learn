@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body background="/Html/image/415519.jpg">
+<!--<select> 元素定义下拉列表：-->
+<!--<option> 元素定义待选择的选项。-->
+<!--列表通常会把首个选项显示为被选选项。-->
+<!--您能够通过添加 selected 属性来定义预定义选项。-->
+<select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audio">Audio</option>
+</select>
+<!--<textarea> 元素定义多行输入字段（文本域）：-->
+<textarea name="message" rows="10" cols="30">the cat was playing in the garden</textarea>
+
+<!--<button> 元素定义可点击的按钮-->
+<button type="button" onclick="alert('hello world!')">Click me</button>
+
+<form action="HTML_CSS.html">
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="submit">
+</form>
+<form>
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+</form>
+<!-- 密码输入 -->
+<form>
+    User name:<br>
+    <input type="text" name="username">
+    <br>
+    User password:<br>
+    <input type="password" name="pwd">
+</form>
+
+<form action="https://www.w3school.com.cn/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- 单选 -->
+<form>
+    <input type="radio" name="sex" value="male" checked>Male
+    <br>
+    <input type="radio" name="sex" value="female">Female
+</form>
+
+<!-- 多选 -->
+<form>
+    <input type="checkbox" name="vehicle" value="Bike">I have a bike
+    <br>
+    <input type="checkbox" name="vehicle" value="Car">I have a car
+</form>
+<!-- 输入限制 -->
+<form>
+    Quantity:
+    <input type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+<!-- 输入类型；date -->
+<form>
+    Birthday:
+    <input type="date" name="bday">
+</form>
+<!--添加一些输入限制-->
+<form>
+    Enter a date before 1980-01-01:
+    <input type="date" name="bday" maxlength="1979-12-31"> <br>
+    Enter a date afer 2000-01-01:
+    <input type="date" name="bday" min="2000-01-02"><br>
+
+</form>
+<!--输入类型color 用于输入包含颜色的输入字段-->
+
+<p>
+    Depending on browser support:<br>
+    A color picker can pop-up when you enter the input firld
+</p>
+<form action="https://www.w3school.com.cn/action_page.php">
+    Select your favorite color:
+    <input type="color" name="favorite" value="#ff0000">
+    <input type="submit">
+</form>
+<!-- 月份，时间，日期时间，email,url-->
+<form>
+    <input type="month" name="month">
+    <input type="week" name="week">
+    <input type="time" name="time">
+    <input type="datetime" name="datetime">
+    <input type="datetime-local" name="datetime-local">
+    <input type="email" name="email">
+    <input type="url" name="url">
+
+</form>
+</body>
+</html>

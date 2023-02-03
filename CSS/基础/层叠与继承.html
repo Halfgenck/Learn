@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*当应用两条同级别的规则到一个元素的时候，写在后面的就是实际使用的规则。*/
+        h1 {
+            color: red;
+        }
+        h1 {
+            color: black;
+        }
+
+        /*浏览器是根据优先级来决定当多个规则有不同选择器对应相同的元素的时候需要使用哪个规则。它基本上是一个衡量选择器具体选择哪些区域的尺度：*/
+        /*一个元素选择器不是很具体，则会选择页面上该类型的所有元素，所以它的优先级就会低一些。*/
+        /*一个类选择器稍微具体点，则会选择该页面中有特定 class 属性值的元素，所以它的优先级就要高一点。*/
+        .main-heading {
+            color: red;
+        }
+        h1 {
+            color: blue;
+        }
+        /*继承也需要在上下文中去理解——一些设置在父元素上的 CSS 属性是可以被子元素继承的，有些则不能。*/
+        body {
+            color: blue;
+        }
+        span{
+            all: initial;
+        }
+    </style>
+</head>
+<body>
+<h1>hello</h1>
+
+<h1 class="main-heading">This is my heading.</h1>
+
+<p>As the body has been set to <span>have a color of blue</span> this is inherited through the descendants.</p>
+<p>We can change the color by targeting the element with a selector, such as this <span>span</span>.</p>
+
+</body>
+</html>

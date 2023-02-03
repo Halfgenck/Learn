@@ -1,0 +1,47 @@
+/*h1 {*/
+/*    color: red;*/
+/*}*/
+/*p ,li{*/
+/*    color: green;*/
+/*}*/
+/*li {*/
+/*    list-style-type: unset;*/
+/*}*/
+/*!*.special{*!*/
+/*!*    color: orange;*!*/
+/*!*    font-weight: bold;*!*/
+/*!*}*!*/
+/*!*这个意思是说，“选中每个 special 类的 li 元素”。你真要这样，好了，它对 <span> 还有其它元素不起作用了。*/
+/*你可以把这个元素再添上去就是了：*!*/
+
+/*!*li.special{*!*/
+/*!*    color: orange;*!*/
+/*!*    font-weight: bold;*!*/
+/*!*}*!*/
+/*span.special,*/
+/*li.special{*/
+/*    color: orange;*/
+/*    font-weight: bold;*/
+/*}*/
+/*li em {*/
+/*    color: rebeccapurple;*/
+/*}*/
+/*h1 + p {*/
+/*    font-size: 200%;*/
+/*}*/
+/*a:link {*/
+/*    color: green;*/
+/*}*/
+/*a:visited {*/
+/*    color: blue;*/
+/*}*/
+/*a:hover {*/
+/*    text-decoration: none;*/
+/*}*/
+.special {
+    color: red;
+}
+
+p {
+    color: blue;
+}

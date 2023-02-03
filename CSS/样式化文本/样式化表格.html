@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+        h1 {
+            font-size: 5rem;
+            text-transform: capitalize;
+            /*文本应用阴影，*/
+            text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        h1 + p {
+            font-weight: bold;
+        }
+        p::first-line {
+            /*letter-spacing 和 word-spacing 属性允许你设置你的文本中的字母与字母之间的间距、或是单词与单词之间的间距。*/
+            letter-spacing: 4px;
+            word-spacing: 4px;
+        }
+        p {
+            font-size: 1.5rem;
+            color: red;
+            /*使用 font-family 属性，这个允许你为浏览器指定一个字体 (或者一个字体的列表)，然后浏览器可以将这种字体应用到选中的元素上。/*/
+            font-family: Helvetica,Arial,sans-serif; /*无衬线字体。*/
+            /*line-height 属性设置文本每行之间的高*/
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+<h1>Tommy the cat</h1>
+
+<p>I remember as if it were a meal ago...</p>
+
+<p>Said Tommy the Cat as he reeled back to clear whatever foreign matter
+    may have nestled its way into his mighty throat. Many a fat alley rat
+    had met its demise while staring point blank down the cavernous barrel of
+    this awesome prowling machine. Truly a wonder of nature this urban
+    predator — Tommy the cat had many a story to tell. But it was a rare
+    occasion such as this that he did.</p>
+
+</body>
+</html>

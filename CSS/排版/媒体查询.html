@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Media Queries: width</title>
+    <style>
+        html {
+            font-size: 1em;
+        }
+
+        @media screen and (width: 600px) {
+            body {
+                color: blue;
+            }
+        }
+        /*朝向 可以用它测得竖放（portrait mode）和横放（landscape mode）模式*/
+        @media (orientation: landscape) {
+            body {
+                color: rebeccapurple;
+            }
+        }
+        /*可以用它测得竖放（portrait mode）和横放（landscape mode）模式*/
+        @media (hover: hover) {
+            body {
+                color: rebeccapurple;
+            }
+        }
+        /*同时满足*/
+        @media screen and (min-width: 400px) and (orientation: landscape) {
+            body {
+                color: blue;
+            }
+        }
+        /*满足一项就可以*/
+        @media screen and (min-width: 400px), screen and (orientation: landscape) {
+            body {
+                color: blue;
+            }
+        }
+        /*非逻辑*/
+        @media not all and (orientation: landscape) {
+            body {
+                color: blue;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<p>One November night in the year 1782, so the story runs, two brothers sat over their winter fire in the little French town of Annonay, watching the grey smoke-wreaths from the hearth curl up the wide chimney. Their names were Stephen and Joseph Montgolfier, they were papermakers by trade, and were noted as possessing thoughtful minds and a deep interest in all scientific knowledge and new discovery.</p>
+<p>Before that night—a memorable night, as it was to prove—hundreds of millions of people had watched the rising smoke-wreaths of their fires without drawing any special inspiration from the fact.”</p>
+
+
+</body>
+
+</html>

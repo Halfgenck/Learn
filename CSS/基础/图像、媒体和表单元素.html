@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .contain {
+            object-fit: contain;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            border: 2px solid #000;
+            margin: 0 0 1em 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            border: 3px solid #333;
+            background-color: #999;
+            border-radius: 5px;
+            padding: 10px 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<!--    如果我们使用值 contain，图像就会被缩放到足以完整地放到盒子里面的大小。如果它和盒子的比例不同，将会出现“开天窗”的结果。-->
+    <div class="box"><img class="cover" src="/Html/image/Konachan.com%20-%20350644%20sample.jpg" alt="star"></div>
+    <div class="box"><img class="contain" src="/Html/image/415519.jpg" alt="balloons"></div>
+</div>
+<form>
+    <div><label for="name">Name</label>
+        <input type="text" id="name"></div>
+    <div><label for="email">Email</label>
+        <input type="email" id="email"></div>
+
+    <div class="buttons"><input type="submit" value="Submit"></div>
+</form>
+
+</body>
+</html>

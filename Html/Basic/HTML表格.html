@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--border 边框宽度-->
+<table border="1">
+    <!--    caption用来显示标题-->
+    <caption>我的标题</caption>
+    <!--    表格的表头使用 <th> 标签进行定义。-->
+    <!--    大多数浏览器会把表头显示为粗体居中的文本：-->
+    <tr>
+        <th>heading</th>
+        <th>another heading</th>
+    </tr>
+
+    <!--    表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），-->
+    <!--    每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data）-->
+    <!--    即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等-->
+    <tr>
+        <td>row 1,cell 1</td>
+        <td>row 1,cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2,cell 1</td>
+        <td>row 2,cell 2</td>
+    </tr>
+
+</table>
+
+<table border="1">
+    <tr>
+        <th>heading</th>
+        <th>another heading</th>
+    </tr>
+
+    <tr>
+        <td>row 1,cell 1</td>
+        <td>row 1,cell 2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>row 2,cell 2</td>
+    </tr>
+
+    <!--    如果无内容，则使用&nbsp;占位符来表示空行-->
+</table>
+<table border="1">
+    <tr>
+        <th>heading</th>
+        <th>another heading</th>
+    </tr>
+
+    <tr>
+        <td>row 1,cell 1</td>
+        <td>row 1,cell 2</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>row 2,cell 2</td>
+    </tr>
+
+</table>
+
+<!--使用rolspan,colspan来显示多行数据-->
+
+<h4>横跨两列的单元格：</h4>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <th colspan="2">电话</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>555 77 854</td>
+        <td>555 77 855</td>
+    </tr>
+</table>
+
+<h4>横跨两行的单元格：</h4>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <td>Bill Gates</td>
+    </tr>
+    <tr>
+        <th rowspan="2">电话</th>
+        <td>555 77 854</td>
+    </tr>
+    <tr>
+        <td>555 77 855</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #first {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!--定义-->
+<!--HTML id 属性用于 为HTML 元素指定唯一的 id。-->
+<!--一个 HTML文档中不能存在多个有相同 id 的元素。-->
+<!--用法-->
+<!--id 属性指定 HTML 元素的唯一 ID。 id 属性的值在 HTML 文档中必须是唯一的。-->
+<!--id 属性用于指向样式表中的特定样式声明。JavaScript 也可使用它来访问和操作拥有特定 ID 的元素。-->
+<!--id 的语法是：写一个井号 (#)，后跟一个 id 名称。然后，在花括号 {} 中定义 CSS 属性。-->
+<h1 id="first">my header</h1>
+
+<!--注释：id 名称对大小写敏感！-->
+<!--注释：id 必须包含至少一个字符，且不能包含空白字符（空格、制表符等）。-->
+
+<h1>在 JavaScript 中使用 id 属性</h1>
+
+<p>JavaScript 可以使用 getElementById() 方法访问具有指定 ID 的元素：</p>
+
+<h2 id="myHeader">Hello World!</h2>
+<button onclick="displayResult()">改变文本</button>
+
+<script>
+    function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--HTML5 地理定位-->
+<!--定位用户的位置-->
+<!--HTML5 Geolocation API 用于获得用户的地理位置。-->
+<!--鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。-->
+
+<p id="demo">点击此按钮，获取坐标</p>
+<button onclick="getLocation()">试一试</button>
+<script>
+    var x = document.getElementById("demo")
+    function getLocation() {
+        // 检测是否支持地理定位,如果支持，则运行 getCurrentPosition() 方法。如果不支持，则向用户显示一段消息。
+        if (navigator.geolocation) {
+            // 如果getCurrentPosition()运行成功，则向参数showPosition中规定的函数返回一个coordinates对象
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }else {
+            x.innerHTML - "Geolocation is not support by this browser";
+        }
+    }
+    //showPosition() 函数获得并显示经度和纬度
+    function showPosition(position) {
+        x.innerHTML = "Latitude:" + position.coords.latitude + "<br />Logitude:" + position.coords.longitude;
+    }
+</script>
+<!--HTML5 拖放-->
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--JavaScript 使 HTML 页面更具动态性和交互性-->
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">显示时间</button>
+<p id="demo"></p>
+
+<!--HTML <script> 标签用于定义客户端脚本（JavaScript）。-->
+<!--<script> 元素即可包含脚本语句，也可通过 src 属性指向外部脚本文件。-->
+<!--JavaScript 的常见用途是图像处理、表单验证和内容的动态更改。-->
+<script>
+    document.getElementById("demo").innerHTML = "hello world"
+</script>
+
+<button type="button" onclick="myFunction()">click</button>
+<p id="demo1">我是版本答案</p>
+<script>
+    function myFunction() {
+        document.getElementById("demo1").style.fontSize="25px";
+        document.getElementById("demo1").style.color="red";
+        document.getElementById("demo1").style.backgroundColor="yellow";
+    }
+</script>
+
+
+<p>在这里，JavaScript 更改了图像的 src 属性。</p>
+
+<script>
+    function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "http://www.w3school.com.cn/i/eg_bulboff.gif"
+        } else {
+            pic = "http://www.w3school.com.cn/i/eg_bulbon.gif"
+        }
+        document.getElementById('myImage').src = pic;
+    }
+</script>
+
+<img id="myImage" src="http://www.w3school.com.cn/i/eg_bulboff.gif" width="109" height="180">
+
+<p>
+    <button type="button" onclick="light(1)">开灯</button>
+    <button type="button" onclick="light(0)">关灯</button>
+</p>
+
+
+
+<p id="demo2"></p>
+
+<script>
+    document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>抱歉，您的浏览器不支持 JavaScript！</noscript>
+
+<p>不支持 JavaScript 的浏览器将显示 noscript 元素内的文本。</p>
+</body>
+</html>

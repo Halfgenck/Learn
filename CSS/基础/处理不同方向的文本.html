@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*横向书写模式下，映射到width的属性被称作内联尺寸（inline-size）——内联维度的尺寸。
+        而映射height的属性被称为块级尺寸（block-size），这是块级维度的尺寸。*/
+        .box {
+            /*width: 150px;*/
+            inline-size: 150px;
+        }
+
+        /*块维度指的总是块在页面书写模式下的显示方向。而内联维度指的总是文本方向。*/
+        .horizontal {
+            /*设置文本的方向为上下，书写方向是横向*/
+            writing-mode: horizontal-tb;
+        }
+        .vertical {
+            /*书写方向上是右到左，文本是纵向的*/
+            writing-mode: vertical-rl;
+        }
+
+
+
+        .box {
+            inline-size: 200px;
+            writing-mode: horizontal-tb;
+        }
+
+        .logical {
+            margin-block-start: 20px;
+            padding-inline-end: 2em;
+            padding-block-start: 2px;
+            border-block-start: 5px solid pink;
+            border-inline-end: 10px dotted rebeccapurple;
+            border-block-end: 1em double orange;
+            border-inline-start: 1px solid black;
+        }
+
+        .physical {
+            margin-top: 20px;
+            padding-right: 2em;
+            padding-top: 2px;
+            border-top: 5px solid pink;
+            border-right: 10px dotted rebeccapurple;
+            border-bottom: 1em double orange;
+            border-left: 1px solid black;
+        }
+
+        h2 {
+            border-bottom: 5px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box horizontal">
+        <h2>Heading</h2>
+        <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+        <p>These boxes have a width.</p>
+    </div>
+    <div class="box vertical">
+        <h2>Heading</h2>
+        <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+        <p>These boxes have a width.</p>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="box physical">
+        <h2>Physical Properties</h2>
+        <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+    </div>
+    <div class="box logical">
+        <h2>Logical Properties</h2>
+        <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+    </div>
+</div>
+
+</body>
+</html>

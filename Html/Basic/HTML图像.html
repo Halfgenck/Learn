@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--添加背景图-->
+
+<body background="/Html/image/415519.jpg">
+
+
+<!--在 HTML 中，图像由 <img> 标签定义。-->
+<!--<img> 是空标签，意思是说，它只包含属性，并且没有闭合标签。-->
+<!--要在页面上显示图像，你需要使用源属性（src）。src 指 "source"。源属性的值是图像的 URL 地址。-->
+<!--<img src="url" />-->
+<!--当浏览器无法载入图像时，替换文本属性可告诉读者他们失去的信息。-->
+<!--此时，浏览器将显示这个替代性的文本而不是图像。-->
+<!--<img src="boat.gif" alt="Big Boat">-->
+
+
+<!--排序图片-->
+<h2>未设置对齐方式的图像：</h2>
+<p>图像 <img src="https://www.w3school.com.cn/i/eg_cute.gif"> 在文本中</p>
+
+<h2>已设置对齐方式的图像：</h2>
+
+<p>图像 <img src="https://www.w3school.com.cn/i/eg_cute.gif" align="bottom"> 在文本中</p>
+
+<p>图像 <img src="https://www.w3school.com.cn/i/eg_cute.gif" align="middle"> 在文本中</p>
+
+<p>图像 <img src="https://www.w3school.com.cn/i/eg_cute.gif" align="top"> 在文本中</p>
+
+<p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+
+<!--浮动图片-->
+
+<p>
+    <img src="https://www.w3school.com.cn/i/eg_cute.gif" align="left">
+    带有图像的一个段落。图像的 align 属性设置为 "left"。图像将浮动到文本的左侧。
+</p>
+
+<p>
+    <img src="https://www.w3school.com.cn/i/eg_cute.gif" align="right">
+    带有图像的一个段落。图像的 align 属性设置为 "right"。图像将浮动到文本的右侧。
+</p>
+
+
+<img src="https://www.w3school.com.cn/i/eg_mouse.jpg" width="50" height="50">
+
+<br/>
+
+<img src="https://www.w3school.com.cn/i/eg_mouse.jpg" width="100" height="100">
+
+<br/>
+
+<img src="https://www.w3school.com.cn/i/eg_mouse.jpg" width="200" height="200">
+
+<p>通过改变 img 标签的 "height" 和 "width" 属性的值，您可以放大或缩小图像。</p>
+
+
+<!--图片转文字-->
+<p>仅支持文本的浏览器无法显示图像，仅仅能够显示在图像的 "alt" 属性中指定的文本。在这里，"alt" 的文本是“向左转”。</p>
+
+<p>请注意，如果您把鼠标指针移动到图像上，大多数浏览器会显示 "alt" 文本。</p>
+
+<img src="https://www.w3school.com.cn/i/eg_goleft.gif" alt="向左转"/>
+
+<p>如果无法显示图像，将显示 "alt" 属性中的文本：</p>
+
+<img src="https://www.w3school.com.cn/i/eg_goleft123.gif" alt="向左转"/>
+
+<!--图像转链接-->
+<p>图像当链接使用</p>
+
+<a href="HTML段落.html">
+    <img border="8" src="/Html/image/Konachan.com%20-%20350644%20sample.jpg" width="150" height="67.6">
+</a>
+
+<!--可点击图片区域 <area>使用-->
+<p>请点击上述图片，将其放大</p>
+<img src="https://www.w3school.com.cn//i/eg_planets.jpg" border="0" usemap="#planetmap" alt="Planeta" />
+<map name="planetmap" id="planetmap">
+    <area shape="circle" coords="180,139,14" href="HTML段落.html" target="_blank" alt="Venus" />
+    <area shape="circle" coords="129,161,10" href="HTML基础.html" target="_blank" alt="Mercury" />
+    <area shape="rect" coords="0,0,110,260" href="HTML段落.html" target="_blank" alt="Sun" />
+</map>
+</body>
+</html>

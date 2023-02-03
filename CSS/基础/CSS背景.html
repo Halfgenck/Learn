@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*在使用简写属性时，属性值的顺序为：
+
+        background-color
+        background-image
+        background-repeat
+        background-attachment
+        background-position
+
+         */
+        body {
+            /*background-color 属性指定元素的背景色。*/
+            background-color: lightblue;
+            /*opacity 属性指定元素的不透明度/透明度。取值范围为 0.0 - 1.0。值越低，越透明：*/
+            opacity: 0.3;
+            /*background-image 属性指定用作元素背景的图像。*/
+            /*默认情况下，图像会重复，以覆盖整个元素。*/
+            background-image: url("/Html/image/415519.jpg");
+            /*背景重复*/
+
+            /*可指定只显示一次背景图像：*/
+            background-repeat: no-repeat;
+
+            /*background-position 属性用于指定背景图像的位置。*/
+            background-position: right top;
+            /*background-attachment 属性指定背景图像是应该滚动还是固定的（不会随页面的其余部分一起滚动）：*/
+            background-attachment: fixed;
+            /*背景图像应随页面的其余部分一起滚动：scroll*/
+        }
+
+        /*还可以为特定元素设置背景图像，例如 <p> 元素：*/
+        p {
+            /*图像仅在水平方向重复*/
+            background-repeat: repeat-x;
+            background-image: url("/Html/image/Konachan.com - 350644 sample.jpg");
+        }
+
+        div {
+            background-color: beige;
+            opacity: 30%;
+            /*不希望对子元素应用不透明度，例如上面的例子，请使用 RGBA 颜色值。*/
+            background: rgba(0, 128, 0, 0.3);
+            background-image: url("/Html/image/415519.jpg");
+            /*垂直重复图像，*/
+            background-repeat: repeat-y;
+        }
+    </style>
+
+</head>
+<body>
+</body>
+</html>
