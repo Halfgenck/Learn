@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--ES2015 引入了两个重要的 JavaScript 新关键词：let 和 const。-->
+<!--在 ES2015 之前，JavaScript 只有两种类型的作用域：全局作用域和函数作用域。-->
+<!--通过 `var` 关键词声明的变量没有块*作用域*。-->
+<!--使用 let 关键词声明拥有块作用域的变量。-->
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+</body>
+<script>
+    // 全局作用域
+    var carName = "porsche";
+    // 此处的代码可以使用 carName
+    myFunction1();
+
+    function myFunction() {
+        // 此处的代码也可以使用 carName
+        document.getElementById("demo").innerHTML =
+            "use car Name : " + carName;
+    }
+    // 函数作用域
+    function myFunction1() {
+        var carName = "porsche";
+        document.getElementById("demo1").innerHTML =
+            typeof carName + " " + carName;
+    }
+
+    document.getElementById("demo2").innerHTML =
+        typeof carName;
+</script>
+</html>

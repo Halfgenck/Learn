@@ -5,7 +5,7 @@ body {
     padding: 1em;
     margin: 0;
 }
-
+/**/
 h1 {
     color: hotpink;
     font-size: 2em;
@@ -39,3 +39,4 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
+
